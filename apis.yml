@@ -1,8 +1,25 @@
 aid: arca
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arca.png
 name: Arca
-description: 'Arca is a company surfaced as a portfolio company of index-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: ai-ml. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Arca (Arca Financial, Inc.) is an AI-native wealth management company founded by former
+  Plaid product leader Rron Rexha and headquartered in New York. It pairs human financial advisors with a
+  fully integrated, agentic platform in which AI agents are the primary operational users: monitoring emails,
+  calls, documents, market data, and news, coordinating with one another, generating dynamic user interfaces,
+  and executing multi-step advisory workflows so advisors can focus on client relationships. Arca is an
+  SEC-registered investment adviser managing over $1 billion in client assets, and raised $64M across a seed
+  round (led by Venrock) and a Series A (led by General Catalyst, with Index Ventures and Venrock). It has no
+  public developer API surface at this time; this profile captures its public identity and security posture.'
 url: https://raw.githubusercontent.com/api-evangelist/arca/refs/heads/main/apis.yml
 x-type: company
 x-source: index-ventures-portfolio
@@ -10,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Ai Ml
+- Fintech
+- Financial Services
+- Wealth Management
+- Wealth Advisory
+- AI Agents
+- Agentic Platform
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/arca-vulnerability-disclosure.yml
+- type: Security
+  url: https://arcawealth.ai/.well-known/security.txt
+- type: DomainSecurity
+  url: security/arca-domain-security.yml
+- type: WellKnown
+  url: well-known/arca-well-known.yml
+- type: SecurityTxt
+  url: well-known/arca-security.txt
+- type: LLMsTxt
+  url: llms/arca-llms.txt
 - type: Website
-  url: http://arcawealth.com
+  url: https://arcawealth.ai
+- type: Careers
+  url: https://jobs.ashbyhq.com/arca
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
