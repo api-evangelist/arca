@@ -1,0 +1,10 @@
+# Arca Financial, Inc security disclosure contact (RFC 9116).
+# If you believe you've found a security issue, please email us. We
+# appreciate reports from the research community and will respond in good
+# faith.
+
+Contact: mailto:security@arcawealth.com
+Expires: 2027-07-08T00:00:00Z
+Preferred-Languages: en
+Canonical: https://app.arcawealth.com/.well-known/security.txt
+Canonical: https://arcawealth.ai/.well-known/security.txt

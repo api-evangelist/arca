@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+host: https://arcawealth.ai
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: arca-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404
+notes: >-
+  Only the RFC 9116 security.txt is published. The security.txt lists a second
+  canonical at https://app.arcawealth.com/.well-known/security.txt (also 200),
+  signed "Arca Financial, Inc." No OIDC/OAuth discovery, api-catalog, or
+  ai-plugin surface exists — Arca publishes no public developer API.
