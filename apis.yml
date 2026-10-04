@@ -43,7 +43,7 @@ tags:
 - Company
 - Ai Ml
 - Fintech
-- Financial-Services
+- Financial Services
 - Wealth Management
 - Wealth Advisory
 - AI Agents
@@ -57,6 +57,7 @@ tags_raw:
 - Wealth Advisory
 - AI Agents
 - Agentic Platform
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
